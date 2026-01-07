@@ -2,6 +2,21 @@
 
 CLI tool for audio transcription with AI summary powered by OpenAI Whisper.
 
+## Prerequisites
+
+- [FFmpeg](https://ffmpeg.org/) must be installed on your system
+
+```bash
+# macOS
+brew install ffmpeg
+
+# Ubuntu/Debian
+sudo apt install ffmpeg
+
+# Windows
+choco install ffmpeg
+```
+
 ## Install
 
 ```bash
