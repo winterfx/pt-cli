@@ -1,0 +1,68 @@
+{
+  "name": "pt-cli",
+  "version": "1.0.0",
+  "description": "CLI tool for audio transcription with AI summary",
+  "type": "commonjs",
+  "bin": {
+    "pt": "bin/pt.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "bin",
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "esbuild src/index.ts --bundle --platform=node --target=node20 --outfile=dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm run typecheck",
+    "release": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^14.0.2",
+    "dotenv": "^16.4.7",
+    "openai": "^4.77.4",
+    "ora": "^5.4.1",
+    "p-limit": "^7.2.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/uuid": "^10.0.0",
+    "esbuild": "^0.24.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "podcast",
+    "transcription",
+    "whisper",
+    "openai",
+    "cli",
+    "audio",
+    "speech-to-text",
+    "srt",
+    "subtitle"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/user/pt-cli.git"
+  },
+  "homepage": "https://github.com/user/pt-cli#readme",
+  "bugs": {
+    "url": "https://github.com/user/pt-cli/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
