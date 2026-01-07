@@ -1,5 +1,5 @@
 {
-  "name": "pt-cli",
+  "name": "@winterfx/pt-cli",
   "version": "1.0.0",
   "description": "CLI tool for audio transcription with AI summary",
   "type": "commonjs",
@@ -51,15 +51,15 @@
     "srt",
     "subtitle"
   ],
-  "author": "",
+  "author": "winterfx",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/user/pt-cli.git"
+    "url": "git+https://github.com/winterfx/pt-cli.git"
   },
-  "homepage": "https://github.com/user/pt-cli#readme",
+  "homepage": "https://github.com/winterfx/pt-cli#readme",
   "bugs": {
-    "url": "https://github.com/user/pt-cli/issues"
+    "url": "https://github.com/winterfx/pt-cli/issues"
   },
   "publishConfig": {
     "access": "public",
