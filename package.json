@@ -62,7 +62,6 @@
     "url": "https://github.com/winterfx/pt-cli/issues"
   },
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   }
 }

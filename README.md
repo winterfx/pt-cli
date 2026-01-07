@@ -5,7 +5,7 @@ CLI tool for audio transcription with AI summary powered by OpenAI Whisper.
 ## Install
 
 ```bash
-npm install -g pt-cli
+npm install -g @winterfx/pt-cli
 ```
 
 ## Configuration
